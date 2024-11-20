@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.kafka.connect.transforms.JsonValuesToListTest" time="0.012" tests="3" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/d.jazvin/projects/pocs/kafka-connect-smt-object-to-list/target/test-classes:/Users/d.jazvin/projects/pocs/kafka-connect-smt-object-to-list/target/classes:/Users/d.jazvin/.m2/repository/org/apache/kafka/connect-api/3.5.0/connect-api-3.5.0.jar:/Users/d.jazvin/.m2/repository/org/apache/kafka/kafka-clients/3.5.0/kafka-clients-3.5.0.jar:/Users/d.jazvin/.m2/repository/com/github/luben/zstd-jni/1.5.5-1/zstd-jni-1.5.5-1.jar:/Users/d.jazvin/.m2/repository/org/lz4/lz4-java/1.8.0/lz4-java-1.8.0.jar:/Users/d.jazvin/.m2/repository/org/xerial/snappy/snappy-java/1.1.10.0/snappy-java-1.1.10.0.jar:/Users/d.jazvin/.m2/repository/javax/ws/rs/javax.ws.rs-api/2.1.1/javax.ws.rs-api-2.1.1.jar:/Users/d.jazvin/.m2/repository/org/junit/jupiter/junit-jupiter/5.8.2/junit-jupiter-5.8.2.jar:/Users/d.jazvin/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/Users/d.jazvin/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/d.jazvin/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/Users/d.jazvin/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/d.jazvin/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.8.2/junit-jupiter-params-5.8.2.jar:/Users/d.jazvin/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/Users/d.jazvin/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:/Users/d.jazvin/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="RS"/>
+    <property name="sun.boot.library.path" value="/Users/d.jazvin/.sdkman/candidates/java/17.0.12-oracle/lib"/>
+    <property name="sun.java.command" value="/Users/d.jazvin/projects/pocs/kafka-connect-smt-object-to-list/target/surefire/surefirebooter15801067359803907570.jar /Users/d.jazvin/projects/pocs/kafka-connect-smt-object-to-list/target/surefire 2024-11-20T16-19-36_393-jvmRun1 surefire13730116580342213389tmp surefire_015402309762741162145tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/d.jazvin/projects/pocs/kafka-connect-smt-object-to-list/target/test-classes:/Users/d.jazvin/projects/pocs/kafka-connect-smt-object-to-list/target/classes:/Users/d.jazvin/.m2/repository/org/apache/kafka/connect-api/3.5.0/connect-api-3.5.0.jar:/Users/d.jazvin/.m2/repository/org/apache/kafka/kafka-clients/3.5.0/kafka-clients-3.5.0.jar:/Users/d.jazvin/.m2/repository/com/github/luben/zstd-jni/1.5.5-1/zstd-jni-1.5.5-1.jar:/Users/d.jazvin/.m2/repository/org/lz4/lz4-java/1.8.0/lz4-java-1.8.0.jar:/Users/d.jazvin/.m2/repository/org/xerial/snappy/snappy-java/1.1.10.0/snappy-java-1.1.10.0.jar:/Users/d.jazvin/.m2/repository/javax/ws/rs/javax.ws.rs-api/2.1.1/javax.ws.rs-api-2.1.1.jar:/Users/d.jazvin/.m2/repository/org/junit/jupiter/junit-jupiter/5.8.2/junit-jupiter-5.8.2.jar:/Users/d.jazvin/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/Users/d.jazvin/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/d.jazvin/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/Users/d.jazvin/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/d.jazvin/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.8.2/junit-jupiter-params-5.8.2.jar:/Users/d.jazvin/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/Users/d.jazvin/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:/Users/d.jazvin/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/d.jazvin"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-07-16"/>
+    <property name="java.home" value="/Users/d.jazvin/.sdkman/candidates/java/17.0.12-oracle"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/d.jazvin/projects/pocs/kafka-connect-smt-object-to-list"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="surefire.real.class.path" value="/Users/d.jazvin/projects/pocs/kafka-connect-smt-object-to-list/target/surefire/surefirebooter15801067359803907570.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="17.0.12+8-LTS-286"/>
+    <property name="user.name" value="d.jazvin"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="14.5"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/d.jazvin/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/72/9zftvyvd1lzc0bs9xgkx7jf00000gn/T/"/>
+    <property name="java.version" value="17.0.12"/>
+    <property name="user.dir" value="/Users/d.jazvin/projects/pocs/kafka-connect-smt-object-to-list"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/d.jazvin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.12+8-LTS-286"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="testTransformWithInvalidFieldType" classname="com.kafka.connect.transforms.JsonValuesToListTest" time="0.008"/>
+  <testcase name="testTransformWithValidField" classname="com.kafka.connect.transforms.JsonValuesToListTest" time="0"/>
+  <testcase name="testTransformWithMissingField" classname="com.kafka.connect.transforms.JsonValuesToListTest" time="0.001"/>
+</testsuite>
